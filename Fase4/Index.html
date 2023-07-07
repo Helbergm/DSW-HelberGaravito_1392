@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cuestionario</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src='main.js'></script>
+</head>
+<body>
+    <div>
+        <a href="../Fase1/Tarea1.html">Fase 1</a>
+        <a href="../Fase2/">Fase 2</a>
+        <a href="../Fase3/">Fase 3</a>
+        
+    </div>
+    <h1 id="resultado">Responda las siguientes preguntas</h1>
+    <div class="container">
+        <form name="formulario">
+            <h3>1. React es una biblioteca de JavaScript utilizada para construir interfaces de usuario interactivas y reactivas, desarrollada por:</h3>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="r1" value="a" id="r1a">
+                <label class="form-check-label" for="r1a">
+                    a. Microsoft
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="r1" value="b" id="r1b">
+                <label class="form-check-label" for="r1b">
+                    b. Facebook
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="r1" value="c" id="r1c">
+                <label class="form-check-label" for="r1c">
+                    c. Google Chrome
+                </label>
+            </div>
+
+            <h3>2. Node.js es un entorno de tiempo de ejecución de JavaScript basado en el motor V8 de:</h3>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="r2" value="a" id="r2a">
+                <label class="form-check-label" for="r2a">
+                    a. Google Chrome
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="r2" value="b" id="r2b">
+                <label class="form-check-label" for="r2b">
+                    b. Apple
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="r2" value="c" id="r2c">
+                <label class="form-check-label" for="r2c">
+                    c. Microsoft
+                </label>
+            </div>
+
+            <h3>3. Cuál de los siguientes verbos utiliza la API REST (Representational State Transfer) en su estilo arquitectónico para diseñar y construir servicios web:</h3>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="r3" value="a" id="r3a">
+                <label class="form-check-label" for="r3a">
+                    a. Get
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="r3" value="b" id="r3b">
+                <label class="form-check-label" for="r3b">
+                    b. Pay
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="r3" value="c" id="r3c">
+                <label class="form-check-label" for="r3c">
+                    c. Walk
+                </label>
+            </div>
+
+            <h3>4. TypeScript es un lenguaje de programación desarrollado por:</h3>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="r4" value="a" id="r4a">
+                <label class="form-check-label" for="r4a">
+                    a. Facebook
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="r4" value="b" id="r4b">
+                <label class="form-check-label" for="r4b">
+                    b. Apple
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="r4" value="c" id="r4c">
+                <label class="form-check-label" for="r4c">
+                    c. Microsoft
+                </label>
+            </div>
+
+            <h3>5. Cuál de las siguientes medidas sirve para mejorar el SEO (Search Engine Optimization, u Optimización para Motores de Búsqueda):</h3>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="r5" value="a" id="r5a">
+                <label class="form-check-label" for="r5a">
+                    a. Investigación de palabras clave
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="r5" value="b" id="r5b">                          
+                <label class="form-check-label" for="r5b">
+                    b. Inferencia de tipos
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="r5" value="c" id="r5c">
+                <label class="form-check-label" for="r5c">
+                    c. Representación de recursos
+                </label>
+            </div>
+
+            <input type="button" class="btn btn-primary" value="Enviar" onclick="ProcesarRespuestas()">
+        </form>
+    </div>
+
+    <script src='script.js'></script>     
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.6/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.6/dist/sweetalert2.min.js"></script>
+
+</body>
+</html>

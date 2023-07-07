@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+    <nav class=" navegacion"><a href="Inicio.html">Inicio</a>
+        <a href="TemaSeleccionado.html">TemaSeleccionado</a>
+        <a href="Mockup.html">Mockup</a>
+        <a href="AcercaDe.html">AcercaDe</a>
+    
+    </nav> 
+
+</header>
+<style>
+    body {
+        font-family: verdana;
+        background-color: #beb7d6;
+    }
+
+    h1 {
+        color: #d42a2a;
+    }
+    h2 {
+        color: #0baf26;
+    }
+</style>
+
+<body>
+    <img src="img/img.jpg">
+
+    <ol>
+        <li><a href="Index.html">INICIO</a>
+
+            <ul>
+                <li><a href="#definicion">Definición</a></li>
+                <li><a href="#que es un selector">Qué es un selector?</a></li>
+                <li><a href="#selectores basicos">Selectores básicos</a></li>
+            </ul>
+        </li>
+        <li><a href="#tema seleccionado">TEMA SELECCIONADO</a></li>
+        <lI><a href="#mockup">MOCKUP</a></li>
+        <li><a href="#acerca de">ACERCA DE</a></li>
+
+    </ol>
+
+    <h1 id="selectores css">Selectores CSS</h1>
+
+    <h2 id="definicion">Definición</h2>
+
+    <p>Los selectores definen sobre qué elementos se aplicará un conjunto de reglas CSS.
+
+        En CSS los selectores se utilizan para delimitar los elementos HTML de nuestra página web a los que queremos
+        aplicar estilo. Hay una amplia variedad de selectores CSS, lo que permite una gran precisión a la hora de
+        seleccionar elementos a los que aplicar estilo.
+    </p>
+
+    <h2 id="que es un selector">Qué es un selector</h2>
+
+    <p>Un selector CSS es la primera parte de una regla CSS. Es un patrón de elementos y otros términos que indican al
+        navegador qué elementos HTML se seleccionan para aplicarles una regla que incluye los valores de las propiedades
+        CSS. El elemento o los elementos seleccionados por el selector se denominan sujeto del selector.
+
+        En CSS, los selectores se definen en la especificación de selectores de CSS correspondiente; al igual que
+        cualquier otro elemento de CSS, es necesario que los navegadores los admitan para que funcionen. La mayoría de
+        los selectores que encontrarás se definen en especificación de nivel 3 de selectores, que es una especificación
+        consolidada y, por lo tanto, la mayoría de navegadores admitirán esos selectores.
+    </p>
+
+    <h2 id="selectores basicos">Selectores básicos</h2>
+
+    <p>Selectores básicos
+        <br>
+        <br>
+        Selector de tipo
+        Selecciona todos los elementos que coinciden con el nombre del elemento especificado.
+        Sintaxis: eltname
+        Ejemplo: se aplicará a cualquier elemento input.input
+        <br>
+        <br>
+        Selector de clase
+        Selecciona todos los elementos que tienen el atributo de especificado.class
+        Sintaxis: .classname
+        Ejemplo: seleccionará cualquier elemento que tenga la clase "index"..index
+        <br>
+        <br>
+        Selector de ID
+        Selecciona un elemento basándose en el valor de su atributo . Solo puede haber un elemento con un determinado ID dentro de un documento.id
+        Sintaxis: #idname
+        Ejemplo: se aplicará a cualquier elemento que tenga el ID "toc".#toc
+        <br>
+        <br>
+        Selector universal
+        Selecciona todos los elementos. Opcionalmente, puede estar restringido a un espacio de nombre específico o a todos los espacios de nombres.
+        Sintaxis: * ns|* *|*
+        Ejemplo: se aplicará a todos los elementos del documento.*
+        <br>
+        <br>
+        Selector de atributo
+        Selecciona elementos basándose en el valor de un determinado atributo.
+        Sintaxis: [attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value]
+        Ejemplo: seleccionará todos los elementos que tengan el atributo "autoplay" establecido (a cualquier
+        valor).[autoplay]
+        <br>
+        <br>
+        Combinadores
+        <br>
+        <br>
+        Combinador de hermanos adyacentes
+        El combinador selecciona hermanos adyacentes. Esto quiere decir que el segundo elemento sigue directamente al
+        primero y ambos comparten el mismo elemento padre.+
+        Sintaxis: A + B
+        Ejemplo: La regla se aplicará a todos los elementos que siguen directamente a un elemento
+        (en-US).h2 + p
+        <br>
+        <br>
+        Combinador general de hermanos
+        El combinador selecciona hermanos. Esto quiere decir que el segundo elemento sigue al primero (no necesariamente de forma inmediata) y ambos comparten el mismo elemento padre.~
+        Sintaxis: A ~ B
+        Ejemplo: La regla se aplicará a todos los elementos span que siguen un elemento p.p ~ span
+        <br>
+        <br>
+        Combinador de hijo
+        El combinador selecciona los elementos que son hijos directos del primer elemento.>
+        Sintaxis: A > B
+        Ejemplo: La regla se aplicará a todos los elementos li que son hijos directos de un elemento ul.ul
+        li
+        <br>
+        <br>
+        Combinador de descendientes
+        El combinador selecciona los elementos que son descendientes del primer elemento.(espacio)
+        Sintaxis: A B
+        Ejemplo: La regla se aplicará a todos los elementos span que están dentro de un elemento div
+        .div span
+        <br>
+        <br>
+        Combinador de columna (en-US) a
+        El combinador selecciona los elementos especificados pertenecientes a una columna.||
+        Sintaxis: A || B
+        Ejemplo: seleccionará todos los elementos td que pertenezcan al ámbito de
+        col.col || td
+        <br>
+        <br>
+        Pseudoclases
+        <br>
+        <br>
+        Las pseudoclases permiten la selección de elementos, basada en información de estado
+        que no está contenida en el árbol de documentos.
+        Ejemplo: La regla a se aplicará a todos los elementos a que hayan sido visitados
+        por el usuario.:visited
+        Pseudoelementos
+        <br>
+        <br>
+        Los pseudoelementos son abstracciones del árbol que representan entidades más
+        allá de los elementos HTML. Por ejemplo, HTML no tiene un elemento que describa
+        la primera letra de un párrafo ni los marcadores de una lista. Los
+        pseudoelementos representan estas entidades y nos permiten asignarles reglas
+        CSS. De este modo podemos diseñar estas entidades de forma independiente.
+        Ejemplo: La regla se aplicará a la primera línea de texto de todos los elementos
+        .p::first-line
+    </p>
+
+    <h2 id="tema seleccionado">TEMA SELECCIONADO</h2>
+
+    <h2 id="mockup">MOCKUP</h2>
+    <img src="img/mockup.jpg" width="500" height="500">
+
+
+    <br>
+    <h2 id="acerca de">ACERCA DE</h2>
+
+    <p>Somos una empresa de diseño de páginas web, con una plataforma en línea que permite a las personas y empresas crear fácilmente su propia página web. Fundada en 2022 en Colombia y nuestra meta es convertirnos en una de las empresas de diseño web más grandes del mundo.
+
+    Nuestra empresa es conocida por su facilidad de uso, ya que no se requiere experiencia en codificación o diseño para crear una página web atractiva y funcional. Ofrecemos una amplia gama de plantillas de diseño para que los usuarios puedan personalizar su página web a su gusto y necesidades. También cuenta con una amplia gama de herramientas de marketing y comercio electrónico para ayudar a los usuarios a hacer crecer su negocio en línea.
+        
+    Contamos con un excelente servicio al cliente y soporte técnico, lo que nos convierte en una opción popular para personas y empresas de todo el mundo que buscan crear su propia página web. En resumen somos  una empresa de diseño web líder en el mercado que ofrece una plataforma fácil de usar y con un amplio conjunto de herramientas para crear una página web atractiva y funcional para cualquier propósito.
+    </p>
+
+    <p class="copyright">Todos los derechos reservados 2023 &copy; Helber Garavito
+        Merch&aacuten, 6:54 p. m. 10/05/2023</p>
+
+
+</body>
+
+</html>
